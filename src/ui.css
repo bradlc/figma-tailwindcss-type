@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://rsms.me/inter/font-files/Inter-Regular.woff2?v=3.7')
+      format('woff2'),
+    url('https://rsms.me/inter/font-files/Inter-Regular.woff?v=3.7')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('https://rsms.me/inter/font-files/Inter-Medium.woff2?v=3.7')
+      format('woff2'),
+    url('https://rsms.me/inter/font-files/Inter-Medium.woff2?v=3.7')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=3.7')
+      format('woff2'),
+    url('https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=3.7')
+      format('woff');
+}
+
+body {
+  font-family: Inter;
+  font-size: 11px;
+  color: #333;
+}
+
+#app {
+  min-height: 100%;
+}
+
+button {
+  cursor: auto;
+}
+
+.text-grey {
+  color: #b3b3b3;
+}
+
+.text-black {
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  margin: 1px 0;
+  padding: 0 7px;
+}
+
+.input span {
+  flex: none;
+}
+
+.input input {
+  height: 28px;
+  border: 1px solid transparent;
+  background: none;
+  outline: none;
+  flex: auto;
+  margin-left: 8px;
+}
+
+.input input:focus {
+  outline: none !important;
+}
+
+.input:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.input:focus-within {
+  margin: 0;
+  height: 30px;
+  border-color: #18a0fb;
+  outline: 1px solid #18a0fb;
+  outline-offset: -2px;
+}
+
+.btn-group {
+  height: 30px;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-group > * {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+.btn-group .active {
+  border-radius: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  height: 32px;
+  padding: 0 15px;
+  background: none;
+  outline: none !important;
+}
+
+.button:active {
+  padding: 0 14px;
+  border: 2px solid #18a0fb;
+}
+
+.checkbox + label {
+  position: relative;
+  padding-left: 22px;
+}
+
+.checkbox + label::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -6px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+}
+
+.checkbox:checked + label::after {
+  border-color: #18a0fb;
+  background-color: #18a0fb;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg%20fill%3D%22none%22%20height%3D%227%22%20viewBox%3D%220%200%208%207%22%20width%3D%228%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20clip-rule%3D%22evenodd%22%20d%3D%22m1.17647%201.88236%201.88235%201.88236%203.76471-3.76472%201.17647%201.17648-4.94118%204.9412-3.05882-3.05884z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: 1px 2px;
+}
